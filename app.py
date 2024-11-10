@@ -107,7 +107,8 @@ with st.sidebar:
         "What can I do for you today?",
         ("/chat with the knowledge base",
          "/make a claim!",
-         "/show me the workflow diagram!",)
+         "/show me the workflow!",
+         "/show me the architecture!")
     )
 
 if add_radio == "/chat with the knowledge base":
@@ -161,5 +162,8 @@ elif add_radio == "/make a claim!":
             final_response
         )
 
-elif add_radio == "/show me the workflow diagram!":
+elif add_radio == "/show me the workflow!":
     st.image("images/wf.png", width=800)
+
+elif add_radio == "/show me the architecture!":
+    st.image("images/arch.png", width=800)
